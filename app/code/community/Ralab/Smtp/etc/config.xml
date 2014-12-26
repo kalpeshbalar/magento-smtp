@@ -24,9 +24,16 @@
             </smtp>
 			<core>
 				<rewrite>
+					<email>Ralab_Smtp_Model_Email</email>
+					<email_queue>Ralab_Smtp_Model_Email_Queue</email_queue>
 					<email_template>Ralab_Smtp_Model_Email_Template</email_template>
 				</rewrite>
 			</core>
+            <newsletter>
+                <rewrite>
+                    <template>Ralab_Smtp_Model_Template</template>
+                </rewrite>
+            </newsletter>
 		</models>
 	</global>
 	<default>

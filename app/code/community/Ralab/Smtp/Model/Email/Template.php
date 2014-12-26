@@ -53,7 +53,7 @@ class Ralab_Smtp_Model_Email_Template extends Mage_Core_Model_Email_Template
                 $returnPathEmail = null;
                 break;
         }
-/*
+
         if ($this->hasQueue() && $this->getQueue() instanceof Mage_Core_Model_Email_Queue) {
             $emailQueue = $this->getQueue();
             $emailQueue->setMessageBody($text);
@@ -71,7 +71,7 @@ class Ralab_Smtp_Model_Email_Template extends Mage_Core_Model_Email_Template
             $emailQueue->addMessageToQueue();
 
             return true;
-        }*/
+        }
 
         ini_set('SMTP', Mage::getStoreConfig('system/smtp/host'));
         ini_set('smtp_port', Mage::getStoreConfig('system/smtp/port'));
