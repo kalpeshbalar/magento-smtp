@@ -1,4 +1,4 @@
-Smtp Mail Authentication
+Magento Extension for Smtp Authentication
 ======================
 
 Magento: Smtp mail authentication
