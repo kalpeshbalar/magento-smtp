@@ -39,7 +39,7 @@ class Ralab_Smtp_Helper_Data extends Mage_Core_Helper_Abstract
         return Mage::getStoreConfig('system/smtp/smtp_ssl', $storeId);
     }
 
-    public function getTransport () {
+    public function getTransport ($storeId = null) {
 
         $config = array();
 
